@@ -1,0 +1,93 @@
+.esercizio-container {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.esercizio-testo h3 {
+  color: #667eea;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+.esercizio-testo p {
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.mostra-soluzione-btn {
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mostra-soluzione-btn:hover {
+  background: #5568d3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.soluzione-container {
+  margin-top: 25px;
+  padding: 25px;
+  background: #f5f7ff;
+  border-left: 4px solid #667eea;
+  border-radius: 8px;
+  animation: fadeIn 0.4s ease;
+}
+
+.soluzione-container h4 {
+  color: #667eea;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.soluzione-testo {
+  color: #333;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  font-family: 'Courier New', monospace;
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.spiegazione {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.spiegazione h5 {
+  color: #764ba2;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.spiegazione p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

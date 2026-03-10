@@ -1,0 +1,98 @@
+{
+  "examTitle": "Esercizi (pagina 1 di 2) | informatica",
+  "questions": [
+    {
+      "questionNumber": 1,
+      "questionText": "Consideriamo il piano . Nell’origine c’è una carica , nel punto () c’è una carica e nel punto c’è un filo di lunghezza infinita nella direzione dell’asse . Calcolare il potenziale elettrico nel punto sapendo che il potenziale all’infinito è nullo. [Formula: x y q_A=Q B=(\\ell ,0) \\ell >0 q_B=Q/\\sqrt {2} L=(0,-\\ell ) z L]",
+      "answers": [
+        {
+          "id": "0",
+          "text": "-k_e \\frac {Q}{2\\ell }",
+          "isCorrect": false
+        },
+        {
+          "id": "1",
+          "text": "+k_e \\frac {3Q}{2\\ell }",
+          "isCorrect": false
+        },
+        {
+          "id": "2",
+          "text": "+k_e \\frac {2Q}{\\ell }",
+          "isCorrect": false
+        },
+        {
+          "id": "3",
+          "text": "-k_e \\frac {2Q}{\\ell }",
+          "isCorrect": false
+        },
+        {
+          "id": "4",
+          "text": "+k_e \\frac {Q}{2\\ell }",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "questionNumber": 2,
+      "questionText": "Calcolare il campo elettrico nel punto . [Formula: \\vec E L]",
+      "answers": [
+        {
+          "id": "0",
+          "text": "+k_e\\frac {Q}{\\ell ^2} [ \\frac {1}{4} \\vec i + \\frac {5}{4} \\vec j ]",
+          "isCorrect": false
+        },
+        {
+          "id": "1",
+          "text": "-k_e\\frac {Q}{\\ell ^2} [ \\frac {1}{4} \\vec i + \\frac {5}{4} \\vec j ]",
+          "isCorrect": false
+        },
+        {
+          "id": "2",
+          "text": "-k_e\\frac {Q}{\\ell ^2} [ \\frac {2\\sqrt {2}}{4} \\vec i + \\frac {1}{4} \\vec j ]",
+          "isCorrect": false
+        },
+        {
+          "id": "3",
+          "text": "-k_e\\frac {Q}{\\ell ^2} [ \\frac { \\sqrt {2}}{4} \\vec i + \\frac {\\sqrt {2}}{4} \\vec j ]",
+          "isCorrect": false
+        },
+        {
+          "id": "4",
+          "text": "+k_e\\frac {Q}{\\ell ^2} [ \\frac {2\\sqrt {2}}{4} \\vec i + \\frac {1}{4} \\vec j ]",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "questionNumber": 3,
+      "questionText": "Calcolare, nel caso in cui il filo sia percorso da una corrente nella direzione -, il campo magnetico nell’origine. [Formula: I \\vec {k}]",
+      "answers": [
+        {
+          "id": "0",
+          "text": "-2 k_m \\frac {I}{\\ell } \\vec i",
+          "isCorrect": false
+        },
+        {
+          "id": "1",
+          "text": "2 k_m \\frac {I}{\\ell } \\vec i",
+          "isCorrect": false
+        },
+        {
+          "id": "2",
+          "text": "-2 k_m \\frac {I}{\\ell } \\vec k",
+          "isCorrect": false
+        },
+        {
+          "id": "3",
+          "text": "2 k_m \\frac {I}{\\ell } \\vec j",
+          "isCorrect": false
+        },
+        {
+          "id": "4",
+          "text": "-2 k_m \\frac {I}{\\ell } \\vec j",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

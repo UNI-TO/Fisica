@@ -1,0 +1,191 @@
+{
+  "examTitle": "Simulazione esame: Revisione tentativo | informatica",
+  "questions": [
+    {
+      "questionNumber": 1,
+      "questionText": "Consideriamo il piano . Nell’origine c’è una carica , nel punto () c’è una carica e nel punto c’è un filo di lunghezza infinita nella direzione dell’asse . Calcolare il potenziale elettrico nel punto sapendo che il potenziale all’infinito è nullo. [Formula: x y q_A=Q B=(\\ell ,0) \\ell >0 q_B=Q/\\sqrt {2} L=(0,-\\ell ) z L]",
+      "answers": [
+        {
+          "id": "0",
+          "text": "+k_e \\frac {2Q}{\\ell }",
+          "isCorrect": false
+        },
+        {
+          "id": "1",
+          "text": "-k_e \\frac {2Q}{\\ell }",
+          "isCorrect": false
+        },
+        {
+          "id": "2",
+          "text": "+k_e \\frac {3Q}{2\\ell }",
+          "isCorrect": true
+        },
+        {
+          "id": "3",
+          "text": "+k_e \\frac {Q}{2\\ell }",
+          "isCorrect": false
+        },
+        {
+          "id": "4",
+          "text": "-k_e \\frac {Q}{2\\ell }",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "questionNumber": 2,
+      "questionText": "Calcolare il campo elettrico nel punto . [Formula: \\vec E L]",
+      "answers": [
+        {
+          "id": "0",
+          "text": "+k_e\\frac {Q}{\\ell ^2} [ \\frac {2\\sqrt {2}}{4} \\vec i + \\frac {1}{4} \\vec j ]",
+          "isCorrect": false
+        },
+        {
+          "id": "1",
+          "text": "+k_e\\frac {Q}{\\ell ^2} [ \\frac {1}{4} \\vec i + \\frac {5}{4} \\vec j ]",
+          "isCorrect": false
+        },
+        {
+          "id": "2",
+          "text": "-k_e\\frac {Q}{\\ell ^2} [ \\frac {2\\sqrt {2}}{4} \\vec i + \\frac {1}{4} \\vec j ]",
+          "isCorrect": false
+        },
+        {
+          "id": "3",
+          "text": "-k_e\\frac {Q}{\\ell ^2} [ \\frac {1}{4} \\vec i + \\frac {5}{4} \\vec j ]",
+          "isCorrect": true
+        },
+        {
+          "id": "4",
+          "text": "-k_e\\frac {Q}{\\ell ^2} [ \\frac { \\sqrt {2}}{4} \\vec i + \\frac {\\sqrt {2}}{4} \\vec j ]",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "questionNumber": 3,
+      "questionText": "Calcolare, nel caso in cui il filo sia percorso da una corrente nella direzione -, il campo magnetico nell’origine. [Formula: I \\vec {k}]",
+      "answers": [
+        {
+          "id": "0",
+          "text": "2 k_m \\frac {I}{\\ell } \\vec i",
+          "isCorrect": true
+        },
+        {
+          "id": "1",
+          "text": "-2 k_m \\frac {I}{\\ell } \\vec k",
+          "isCorrect": false
+        },
+        {
+          "id": "2",
+          "text": "-2 k_m \\frac {I}{\\ell } \\vec j",
+          "isCorrect": false
+        },
+        {
+          "id": "3",
+          "text": "2 k_m \\frac {I}{\\ell } \\vec j",
+          "isCorrect": false
+        },
+        {
+          "id": "4",
+          "text": "-2 k_m \\frac {I}{\\ell } \\vec i",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "questionNumber": 4,
+      "questionText": "Il circuito in figura si trova inizialmente in condizioni stazionarie con l’interruttore T aperto. All’istante =0 s l’interruttore T viene chiuso. Determinare la corrente immediatamente prima di chiudere T: [Formula: t i_0]",
+      "answers": [
+        {
+          "id": "0",
+          "text": "-\\frac {V_0}{R}",
+          "isCorrect": false
+        },
+        {
+          "id": "1",
+          "text": "\\frac {V_0}{2R}",
+          "isCorrect": false
+        },
+        {
+          "id": "2",
+          "text": "\\frac {V_0}{R}",
+          "isCorrect": true
+        },
+        {
+          "id": "3",
+          "text": "-\\frac {V_0}{2R}",
+          "isCorrect": false
+        },
+        {
+          "id": "4",
+          "text": "0",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "questionNumber": 5,
+      "questionText": "Determinare la differenza di potenziale immediatamente prima di chiudere T: [Formula: V_A-V_B]",
+      "answers": [
+        {
+          "id": "0",
+          "text": "\\frac {V_0}{2}",
+          "isCorrect": false
+        },
+        {
+          "id": "1",
+          "text": "-2V_0",
+          "isCorrect": false
+        },
+        {
+          "id": "2",
+          "text": "-\\frac {V_0}{2}",
+          "isCorrect": false
+        },
+        {
+          "id": "3",
+          "text": "2V_0",
+          "isCorrect": false
+        },
+        {
+          "id": "4",
+          "text": "0",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "questionNumber": 6,
+      "questionText": "Determinare la differenza di potenziale che comparirebbe ai capi di se alla stazionarietà venisse nuovamente aperto T [Formula: V_A-V_B L]",
+      "answers": [
+        {
+          "id": "0",
+          "text": "-\\frac {2V_0}{3}",
+          "isCorrect": true
+        },
+        {
+          "id": "1",
+          "text": "-2V_0",
+          "isCorrect": false
+        },
+        {
+          "id": "2",
+          "text": "2V_0",
+          "isCorrect": false
+        },
+        {
+          "id": "3",
+          "text": "0",
+          "isCorrect": false
+        },
+        {
+          "id": "4",
+          "text": "\\frac {2V_0}{3}",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

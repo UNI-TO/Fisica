@@ -1,0 +1,98 @@
+{
+  "examTitle": "Esercizi (pagina 2 di 2) | informatica",
+  "questions": [
+    {
+      "questionNumber": 1,
+      "questionText": "Il circuito in figura si trova inizialmente in condizioni stazionarie con l’interruttore T aperto. All’istante =0 s l’interruttore T viene chiuso. Determinare la corrente immediatamente prima di chiudere T: [Formula: t i_0]",
+      "answers": [
+        {
+          "id": "0",
+          "text": "\\frac {V_0}{R}",
+          "isCorrect": false
+        },
+        {
+          "id": "1",
+          "text": "-\\frac {V_0}{2R}",
+          "isCorrect": false
+        },
+        {
+          "id": "2",
+          "text": "\\frac {V_0}{2R}",
+          "isCorrect": false
+        },
+        {
+          "id": "3",
+          "text": "0",
+          "isCorrect": false
+        },
+        {
+          "id": "4",
+          "text": "-\\frac {V_0}{R}",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "questionNumber": 2,
+      "questionText": "Determinare la differenza di potenziale immediatamente prima di chiudere T: [Formula: V_A-V_B]",
+      "answers": [
+        {
+          "id": "0",
+          "text": "\\frac {V_0}{2}",
+          "isCorrect": false
+        },
+        {
+          "id": "1",
+          "text": "-2V_0",
+          "isCorrect": false
+        },
+        {
+          "id": "2",
+          "text": "2V_0",
+          "isCorrect": false
+        },
+        {
+          "id": "3",
+          "text": "0",
+          "isCorrect": false
+        },
+        {
+          "id": "4",
+          "text": "-\\frac {V_0}{2}",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "questionNumber": 3,
+      "questionText": "Determinare la differenza di potenziale che comparirebbe ai capi di se alla stazionarietà venisse nuovamente aperto T [Formula: V_A-V_B L]",
+      "answers": [
+        {
+          "id": "0",
+          "text": "-\\frac {2V_0}{3}",
+          "isCorrect": false
+        },
+        {
+          "id": "1",
+          "text": "2V_0",
+          "isCorrect": false
+        },
+        {
+          "id": "2",
+          "text": "-2V_0",
+          "isCorrect": false
+        },
+        {
+          "id": "3",
+          "text": "\\frac {2V_0}{3}",
+          "isCorrect": false
+        },
+        {
+          "id": "4",
+          "text": "0",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

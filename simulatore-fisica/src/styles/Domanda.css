@@ -1,0 +1,93 @@
+.domanda-container {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.domanda-testo {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.opzioni-container {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.opzione-btn {
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: 2px solid #667eea;
+  background: white;
+  color: #667eea;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+
+.opzione-btn:hover:not(:disabled) {
+  background: #667eea;
+  color: white;
+  transform: scale(1.05);
+}
+
+.opzione-btn.selezionata {
+  background: #667eea;
+  color: white;
+}
+
+.opzione-btn.corretta {
+  background: #4caf50;
+  border-color: #4caf50;
+  color: white;
+}
+
+.opzione-btn.errata {
+  background: #f44336;
+  border-color: #f44336;
+  color: white;
+}
+
+.opzione-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.feedback {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  animation: slideDown 0.3s ease;
+}
+
+.feedback.corretto {
+  background: #e8f5e9;
+  color: #4caf50;
+  border: 2px solid #4caf50;
+}
+
+.feedback.sbagliato {
+  background: #ffebee;
+  color: #f44336;
+  border: 2px solid #f44336;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

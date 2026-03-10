@@ -1,0 +1,105 @@
+.esame-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.esame-header {
+  background: white;
+  padding: 30px;
+  border-radius: 12px 12px 0 0;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.esame-header h2 {
+  color: #667eea;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.progresso {
+  color: #666;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.progresso-barra {
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 0;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.progresso-riempimento {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  transition: width 0.5s ease;
+}
+
+.esame-completato {
+  background: white;
+  border-radius: 15px;
+  padding: 50px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.esame-completato h2 {
+  color: #667eea;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.risultati {
+  background: #f5f7ff;
+  padding: 40px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.punteggio {
+  font-size: 3rem;
+  color: #667eea;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.percentuale {
+  font-size: 2.5rem;
+  color: #764ba2;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.esito-positivo {
+  color: #4caf50;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.esito-negativo {
+  color: #f44336;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.ricomincia-btn {
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ricomincia-btn:hover {
+  background: #5568d3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}

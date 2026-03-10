@@ -1,0 +1,45 @@
+import { Link } from 'react-router-dom';
+import '../styles/Home.css';
+
+function Home() {
+  return (
+    <div className="home-container">
+      <header className="hero">
+        <h1>Simulatore Esami Fisica</h1>
+        <p className="sottotitolo">Preparati per i tuoi esami universitari di fisica</p>
+      </header>
+
+      <div className="menu-principale">
+        <Link to="/argomenti" className="menu-card">
+          <div className="icona">📚</div>
+          <h2>Argomenti</h2>
+          <p>Studia per argomento con domande ed esercizi</p>
+        </Link>
+
+        <Link to="/esami" className="menu-card">
+          <div className="icona">📝</div>
+          <h2>Esami Simulati</h2>
+          <p>Mettiti alla prova con esami completi</p>
+        </Link>
+
+        <Link to="/pratica" className="menu-card">
+          <div className="icona">✍️</div>
+          <h2>Esercizi</h2>
+          <p>Risolvi esercizi con soluzioni dettagliate</p>
+        </Link>
+      </div>
+
+      <div className="info-sezione">
+        <h3>Come funziona?</h3>
+        <ul>
+          <li>Scegli un argomento o un esame simulato</li>
+          <li>Rispondi alle domande vero/falso</li>
+          <li>Risolvi esercizi con soluzioni step-by-step</li>
+          <li>Monitora i tuoi progressi</li>
+        </ul>
+      </div>
+    </div>
+  );
+}
+
+export default Home;
