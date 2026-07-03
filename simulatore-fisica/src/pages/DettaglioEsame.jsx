@@ -1,6 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import { getEsameById } from '../data/esami';
 import Esame from '../components/Esame';
+import { updateEsameProgress } from '../utils/progressManager';
 import '../styles/DettaglioEsame.css';
 
 function DettaglioEsame() {
@@ -16,9 +17,16 @@ function DettaglioEsame() {
     );
   }
 
-  const handleCompletamento = (risposte) => {
-    console.log('Esame completato:', risposte);
-    // Qui potresti salvare i risultati, ad esempio in localStorage
+  const handleCompletamento = (risposte, tempo) => {
+    const corrette = risposte.filter(r => r).length;
+    const punteggio = Math.round((corrette / risposte.length) * 100);
+
+    updateEsameProgress(id, {
+      punteggio,
+      tempo,
+      corrette,
+      totale: risposte.length
+    });
   };
 
   return (
@@ -27,6 +35,7 @@ function DettaglioEsame() {
       <Esame
         titolo={esame.titolo}
         domande={esame.domande}
+        durata={esame.durata}
         onCompletamento={handleCompletamento}
       />
     </div>

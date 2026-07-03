@@ -15,8 +15,8 @@ function Argomenti() {
             id={argomento.id}
             titolo={argomento.titolo}
             descrizione={argomento.descrizione}
-            numDomande={argomento.numDomande}
-            numEsercizi={argomento.numEsercizi}
+            numDomande={argomento.domande?.length ?? 0}
+            numEsercizi={argomento.esercizi?.length ?? 0}
           />
         ))}
       </div>

@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import '../styles/Domanda.css';
 
-function DomandaVeroFalso({ domanda, risposta, onRisposta }) {
+function DomandaVeroFalso({ domanda, risposta, onRisposta, onNext, isUltima }) {
   const [selezionata, setSelezionata] = useState(null);
   const [mostraRisposta, setMostraRisposta] = useState(false);
 
   const handleRisposta = (valore) => {
+    if (mostraRisposta) return;
     setSelezionata(valore);
     setMostraRisposta(true);
     if (onRisposta) {
@@ -37,8 +38,15 @@ function DomandaVeroFalso({ domanda, risposta, onRisposta }) {
         </button>
       </div>
       {mostraRisposta && (
-        <div className={`feedback ${selezionata === risposta ? 'corretto' : 'sbagliato'}`}>
-          {selezionata === risposta ? '✓ Corretto!' : '✗ Sbagliato!'}
+        <div className="feedback-area">
+          <div className={`feedback ${selezionata === risposta ? 'corretto' : 'sbagliato'}`}>
+            {selezionata === risposta ? '✓ Corretto!' : '✗ Sbagliato!'}
+          </div>
+          {onNext && (
+            <button className="prossima-btn" onClick={onNext}>
+              {isUltima ? 'Vedi risultati →' : 'Prossima domanda →'}
+            </button>
+          )}
         </div>
       )}
     </div>

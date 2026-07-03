@@ -1,64 +1,126 @@
-// Struttura dati per gli esami simulati
-
 export const esami = [
   {
     id: 'esame-completo-1',
-    titolo: 'Esame Completo - Sessione 1',
-    descrizione: 'Esame che copre tutti gli argomenti del corso',
-    durata: 90, // minuti
+    titolo: 'Esame Completo — Sessione 1',
+    descrizione: 'Esame che copre tutti gli argomenti del corso: cinematica, dinamica, energia, termodinamica ed elettromagnetismo',
+    durata: 90,
     domande: [
-      {
-        id: 1,
-        domanda: 'La velocità è definita come la derivata della posizione rispetto al tempo',
-        risposta: true
-      },
-      {
-        id: 2,
-        domanda: 'Un corpo in moto rettilineo uniforme ha accelerazione costante diversa da zero',
-        risposta: false
-      },
-      {
-        id: 3,
-        domanda: 'La forza peso è direttamente proporzionale alla massa',
-        risposta: true
-      },
-      {
-        id: 4,
-        domanda: 'L\'energia cinetica dipende linearmente dalla velocità',
-        risposta: false
-      },
-      {
-        id: 5,
-        domanda: 'Il rendimento di una macchina termica ideale è sempre minore di 1',
-        risposta: true
-      },
-      // Aggiungi altre domande qui
+      { id: 1,  domanda: 'La velocità è definita come la derivata della posizione rispetto al tempo', risposta: true },
+      { id: 2,  domanda: 'Un corpo in moto rettilineo uniforme ha accelerazione diversa da zero', risposta: false },
+      { id: 3,  domanda: 'La forza peso è direttamente proporzionale alla massa', risposta: true },
+      { id: 4,  domanda: "L'energia cinetica dipende linearmente dalla velocità", risposta: false },
+      { id: 5,  domanda: 'Il rendimento di una macchina termica reale è sempre minore di 1', risposta: true },
+      { id: 6,  domanda: 'Lo spostamento è sempre uguale alla distanza percorsa', risposta: false },
+      { id: 7,  domanda: 'Nel moto uniformemente accelerato la velocità aumenta linearmente nel tempo', risposta: true },
+      { id: 8,  domanda: 'Il lavoro compiuto da una forza perpendicolare allo spostamento è zero', risposta: true },
+      { id: 9,  domanda: "L'energia meccanica si conserva anche in presenza di attrito", risposta: false },
+      { id: 10, domanda: 'La pressione di un gas ideale è inversamente proporzionale al volume a temperatura costante', risposta: true },
+      { id: 11, domanda: 'Il calore e la temperatura sono la stessa grandezza fisica', risposta: false },
+      { id: 12, domanda: 'In un circuito in parallelo la tensione è uguale su ogni ramo', risposta: true },
+      { id: 13, domanda: 'La resistenza di un conduttore dipende dalla sua lunghezza', risposta: true },
+      { id: 14, domanda: 'Un campo magnetico può compiere lavoro su una carica ferma', risposta: false },
+      { id: 15, domanda: 'In un moto circolare uniforme la velocità scalare è costante', risposta: true },
+      { id: 16, domanda: "L'attrito statico massimo è solitamente maggiore dell'attrito dinamico", risposta: true },
+      { id: 17, domanda: 'La potenza è misurata in joule', risposta: false },
+      { id: 18, domanda: 'Un gas ideale ha interazioni tra le molecole trascurabili', risposta: true },
+      { id: 19, domanda: "L'energia potenziale elastica è proporzionale al quadrato dell'allungamento", risposta: true },
+      { id: 20, domanda: 'Le onde elettromagnetiche necessitano di un mezzo materiale per propagarsi', risposta: false },
+      { id: 21, domanda: 'La quantità di moto di un sistema isolato si conserva', risposta: true },
+      { id: 22, domanda: 'La forza di Coulomb tra due cariche diminuisce con il quadrato della distanza', risposta: true },
+      { id: 23, domanda: 'Il principio di Archimede vale solo per i liquidi, non per i gas', risposta: false },
+      { id: 24, domanda: 'In un urto perfettamente anelastico si conserva la quantità di moto', risposta: true },
+      { id: 25, domanda: 'La velocità della luce nel vuoto è circa 3 × 10⁸ m/s', risposta: true },
+    ]
+  },
+  {
+    id: 'esame-completo-2',
+    titolo: 'Esame Completo — Sessione 2',
+    descrizione: 'Seconda sessione completa su tutti gli argomenti del corso',
+    durata: 90,
+    domande: [
+      { id: 1,  domanda: 'In un grafico velocità-tempo, la pendenza rappresenta l\'accelerazione', risposta: true },
+      { id: 2,  domanda: 'La forza è una grandezza scalare', risposta: false },
+      { id: 3,  domanda: 'Il principio di inerzia vale in tutti i sistemi di riferimento', risposta: false },
+      { id: 4,  domanda: 'La potenza istantanea è il prodotto scalare di forza e velocità', risposta: true },
+      { id: 5,  domanda: 'Due corpi in caduta libera nel vuoto raggiungono terra nello stesso istante se partono dalla stessa altezza', risposta: true },
+      { id: 6,  domanda: 'La forza centripeta è diretta verso il centro della traiettoria circolare', risposta: true },
+      { id: 7,  domanda: 'In un urto elastico si conservano sia la quantità di moto che l\'energia cinetica', risposta: true },
+      { id: 8,  domanda: 'Il lavoro può avere valore negativo', risposta: true },
+      { id: 9,  domanda: 'La forza di gravità tra due corpi aumenta all\'aumentare della distanza', risposta: false },
+      { id: 10, domanda: 'Il calore fluisce spontaneamente dal corpo più freddo a quello più caldo', risposta: false },
+      { id: 11, domanda: "L'entropia di un sistema isolato non può diminuire spontaneamente", risposta: true },
+      { id: 12, domanda: 'La temperatura assoluta zero corrisponde a −273,15 °C', risposta: true },
+      { id: 13, domanda: 'In un processo adiabatico vi è scambio di calore con l\'ambiente', risposta: false },
+      { id: 14, domanda: 'La legge di Ohm vale per tutti i materiali', risposta: false },
+      { id: 15, domanda: 'In un circuito in serie la corrente è la stessa in ogni punto', risposta: true },
+      { id: 16, domanda: 'La potenza dissipata per effetto Joule è proporzionale al quadrato della corrente', risposta: true },
+      { id: 17, domanda: 'Un campo magnetico variabile genera un campo elettrico', risposta: true },
+      { id: 18, domanda: 'Le onde elettromagnetiche sono onde longitudinali', risposta: false },
+      { id: 19, domanda: 'I raggi X hanno frequenza maggiore della luce visibile', risposta: true },
+      { id: 20, domanda: 'La capacità di un condensatore dipende dalla geometria delle armature', risposta: true },
+      { id: 21, domanda: 'Il campo elettrico è diretto dal potenziale alto verso il potenziale basso', risposta: true },
+      { id: 22, domanda: 'In un\'oscillazione armonica la velocità è massima nel punto di equilibrio', risposta: true },
+      { id: 23, domanda: 'Il momento angolare si conserva se il momento torcente netto è zero', risposta: true },
+      { id: 24, domanda: 'La frequenza di un\'onda aumenta quando la sua lunghezza d\'onda diminuisce a velocità costante', risposta: true },
+      { id: 25, domanda: 'L\'effetto fotoelettrico può essere spiegato dalla fisica classica', risposta: false },
     ]
   },
   {
     id: 'esame-parziale-meccanica',
-    titolo: 'Esame Parziale - Meccanica',
+    titolo: 'Esame Parziale — Meccanica',
     descrizione: 'Esame su cinematica, dinamica ed energia',
     durata: 60,
     domande: [
-      {
-        id: 1,
-        domanda: 'Lo spostamento è sempre uguale allo spazio percorso',
-        risposta: false
-      },
-      {
-        id: 2,
-        domanda: 'La terza legge di Newton afferma che ad ogni azione corrisponde una reazione uguale e contraria',
-        risposta: true
-      },
-      {
-        id: 3,
-        domanda: 'L\'energia potenziale gravitazionale aumenta con l\'altezza',
-        risposta: true
-      },
-      // Aggiungi altre domande qui
+      { id: 1,  domanda: 'Lo spostamento è sempre uguale allo spazio percorso', risposta: false },
+      { id: 2,  domanda: 'La terza legge di Newton afferma che ad ogni azione corrisponde una reazione uguale e contraria', risposta: true },
+      { id: 3,  domanda: "L'energia potenziale gravitazionale aumenta con l'altezza", risposta: true },
+      { id: 4,  domanda: 'Nel moto rettilineo uniforme l\'accelerazione è nulla', risposta: true },
+      { id: 5,  domanda: 'La velocità angolare si misura in metri al secondo', risposta: false },
+      { id: 6,  domanda: 'Il principio di inerzia vale solo in sistemi di riferimento inerziali', risposta: true },
+      { id: 7,  domanda: "L'energia cinetica di un corpo in quiete è zero", risposta: true },
+      { id: 8,  domanda: 'La quantità di moto si conserva in un sistema isolato', risposta: true },
+      { id: 9,  domanda: 'La forza centripeta è diretta verso l\'esterno della traiettoria circolare', risposta: false },
+      { id: 10, domanda: 'La forza peso di un corpo sulla Luna è inferiore rispetto alla Terra', risposta: true },
+      { id: 11, domanda: "L'accelerazione centripeta è proporzionale al quadrato della velocità", risposta: true },
+      { id: 12, domanda: 'La forza di attrito statico può essere nulla anche quando è applicata una forza', risposta: false },
+      { id: 13, domanda: 'In un piano inclinato senza attrito, la componente della forza peso parallela al piano è m·g·sin(θ)', risposta: true },
+      { id: 14, domanda: 'Il rendimento di una qualsiasi macchina reale può essere uguale a 1', risposta: false },
+      { id: 15, domanda: 'In un moto parabolico, la componente orizzontale della velocità rimane costante (senza resistenza dell\'aria)', risposta: true },
+      { id: 16, domanda: 'La costante elastica di una molla dipende dal materiale e dalla geometria della molla', risposta: true },
+      { id: 17, domanda: 'In un urto perfettamente anelastico i corpi rimangono uniti dopo l\'urto', risposta: true },
+      { id: 18, domanda: 'Il periodo di un pendolo semplice per piccole oscillazioni dipende dalla massa del pendolo', risposta: false },
+      { id: 19, domanda: 'La forza di gravitazione universale è sempre attrattiva tra due masse', risposta: true },
+      { id: 20, domanda: "L'energia meccanica totale si conserva solo in assenza di forze non conservative", risposta: true },
     ]
-  }
+  },
+  {
+    id: 'esame-parziale-termoed',
+    titolo: 'Esame Parziale — Termodinamica ed Elettromagnetismo',
+    descrizione: 'Esame su termodinamica, fenomeni elettrici e magnetici',
+    durata: 60,
+    domande: [
+      { id: 1,  domanda: 'Il primo principio della termodinamica è una forma del principio di conservazione dell\'energia', risposta: true },
+      { id: 2,  domanda: 'Il secondo principio della termodinamica permette di costruire un motore con rendimento del 100%', risposta: false },
+      { id: 3,  domanda: 'Il calore specifico è la quantità di energia necessaria per riscaldare 1 kg di sostanza di 1 °C', risposta: true },
+      { id: 4,  domanda: 'Nella dilatazione isobara di un gas ideale la pressione rimane costante', risposta: true },
+      { id: 5,  domanda: 'In un processo isocoro il volume del gas rimane costante', risposta: true },
+      { id: 6,  domanda: 'Il gas ideale segue la legge PV = nRT', risposta: true },
+      { id: 7,  domanda: 'La conducibilità termica dei metalli è generalmente bassa', risposta: false },
+      { id: 8,  domanda: 'L\'entropia è una funzione di stato', risposta: true },
+      { id: 9,  domanda: 'La macchina di Carnot è la macchina termica con il massimo rendimento possibile tra due temperature date', risposta: true },
+      { id: 10, domanda: 'Il rendimento della macchina di Carnot dipende solo dalle temperature della sorgente e del pozzo', risposta: true },
+      { id: 11, domanda: 'Cariche dello stesso segno si attraggono', risposta: false },
+      { id: 12, domanda: 'La forza di Coulomb tra due cariche puntiformi è proporzionale al prodotto delle cariche', risposta: true },
+      { id: 13, domanda: 'Il campo elettrico è una grandezza vettoriale', risposta: true },
+      { id: 14, domanda: 'Il potenziale elettrico è una grandezza scalare', risposta: true },
+      { id: 15, domanda: 'La resistività di un metallo diminuisce all\'aumentare della temperatura', risposta: false },
+      { id: 16, domanda: 'In un circuito con resistenze in parallelo, la resistenza equivalente è minore di ciascuna resistenza', risposta: true },
+      { id: 17, domanda: 'Un campo magnetico uniforme non esercita forza netta su un dipolo magnetico fermo', risposta: true },
+      { id: 18, domanda: 'La forza di Lorentz su una carica in moto è sempre perpendicolare alla velocità', risposta: true },
+      { id: 19, domanda: "La legge di Faraday afferma che la f.e.m. indotta è proporzionale alla variazione del flusso magnetico", risposta: true },
+      { id: 20, domanda: 'Le onde radio hanno lunghezza d\'onda maggiore delle onde infrarosse', risposta: true },
+    ]
+  },
 ];
 
 export const getEsameById = (id) => {

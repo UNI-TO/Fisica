@@ -27,6 +27,12 @@ function Home() {
           <h2>Esercizi</h2>
           <p>Risolvi esercizi con soluzioni dettagliate</p>
         </Link>
+
+        <Link to="/statistiche" className="menu-card">
+          <div className="icona">📊</div>
+          <h2>Statistiche</h2>
+          <p>Monitora i tuoi progressi e risultati</p>
+        </Link>
       </div>
 
       <div className="info-sezione">

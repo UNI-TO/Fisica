@@ -12,7 +12,10 @@ body {
 
 .app {
   min-height: 100vh;
-  padding: 20px;
+}
+
+.app-content {
+  padding: 84px 20px 40px;
 }
 
 a {
