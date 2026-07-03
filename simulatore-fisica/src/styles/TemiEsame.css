@@ -1,0 +1,139 @@
+.temi-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.temi-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 32px;
+}
+
+.temi-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.temi-header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.temi-filtri {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.filtro-btn {
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: 2px solid rgba(255,255,255,0.5);
+  background: rgba(255,255,255,0.15);
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filtro-btn:hover {
+  background: rgba(255,255,255,0.25);
+}
+
+.filtro-btn.attivo {
+  background: white;
+  color: #667eea;
+  border-color: white;
+}
+
+.temi-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tema-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: box-shadow 0.2s ease;
+}
+
+.tema-card:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.tema-card-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+}
+
+.tema-numero {
+  min-width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.tema-card-header h3 {
+  flex: 1;
+  color: #333;
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+.tema-argomento {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.tag-elettrostatica { background: #e3f2fd; color: #1565c0; }
+.tag-circuiti       { background: #e8f5e9; color: #2e7d32; }
+.tag-magnetismo     { background: #fce4ec; color: #c62828; }
+.tag-induzione      { background: #fff3e0; color: #e65100; }
+.tag-elettronica    { background: #f3e5f5; color: #6a1b9a; }
+
+.tema-chevron {
+  color: #999;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+.tema-descrizione {
+  padding: 0 24px 20px 76px;
+  border-top: 1px solid #f0f0f0;
+  animation: slideDown 0.25s ease;
+}
+
+.tema-descrizione p {
+  color: #555;
+  line-height: 1.7;
+  font-size: 0.97rem;
+  margin-top: 14px;
+}
+
+.tema-card.aperto {
+  border-left: 4px solid #667eea;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

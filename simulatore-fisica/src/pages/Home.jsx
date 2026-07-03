@@ -33,6 +33,18 @@ function Home() {
           <h2>Statistiche</h2>
           <p>Monitora i tuoi progressi e risultati</p>
         </Link>
+
+        <Link to="/esami-reali" className="menu-card">
+          <div className="icona">🎯</div>
+          <h2>Esami Reali</h2>
+          <p>Domande a scelta multipla con formule matematiche da sessioni reali</p>
+        </Link>
+
+        <Link to="/temi-esame" className="menu-card">
+          <div className="icona">📖</div>
+          <h2>Temi d'Esame</h2>
+          <p>I 18 argomenti ufficiali per la prova scritta</p>
+        </Link>
       </div>
 
       <div className="info-sezione">

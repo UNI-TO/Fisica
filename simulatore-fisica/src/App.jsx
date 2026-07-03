@@ -6,6 +6,9 @@ import Esami from './pages/Esami';
 import DettaglioEsame from './pages/DettaglioEsame';
 import Statistiche from './pages/Statistiche';
 import Pratica from './pages/Pratica';
+import EsamiReali from './pages/EsamiReali';
+import DettaglioEsameReale from './pages/DettaglioEsameReale';
+import TemiEsame from './pages/TemiEsame';
 import Navbar from './components/Navbar';
 import './App.css';
 
@@ -23,6 +26,9 @@ function App() {
             <Route path="/esame/:id" element={<DettaglioEsame />} />
             <Route path="/statistiche" element={<Statistiche />} />
             <Route path="/pratica" element={<Pratica />} />
+            <Route path="/esami-reali" element={<EsamiReali />} />
+            <Route path="/esame-reale/:id" element={<DettaglioEsameReale />} />
+            <Route path="/temi-esame" element={<TemiEsame />} />
           </Routes>
         </div>
       </div>

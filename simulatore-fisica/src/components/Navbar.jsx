@@ -4,7 +4,9 @@ import '../styles/Navbar.css';
 const links = [
   { to: '/',             label: 'Home',        icon: '🏠', match: /^\/$/ },
   { to: '/argomenti',   label: 'Argomenti',   icon: '📚', match: /^\/argomento/ },
-  { to: '/esami',       label: 'Esami',       icon: '📝', match: /^\/esame/ },
+  { to: '/esami',       label: 'Esami V/F',   icon: '📝', match: /^\/esami$|^\/esame\// },
+  { to: '/esami-reali', label: 'Esami Reali', icon: '🎯', match: /^\/esami-reali|^\/esame-reale/ },
+  { to: '/temi-esame',  label: 'Temi',        icon: '📖', match: /^\/temi-esame/ },
   { to: '/pratica',     label: 'Esercizi',    icon: '✍️', match: /^\/pratica/ },
   { to: '/statistiche', label: 'Statistiche', icon: '📊', match: /^\/statistiche/ },
 ];

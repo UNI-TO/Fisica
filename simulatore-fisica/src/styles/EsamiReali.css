@@ -1,0 +1,184 @@
+.esami-reali-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.esami-reali-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.esami-reali-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.esami-reali-header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.esami-reali-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.esame-reale-card {
+  background: white;
+  border-radius: 15px;
+  padding: 36px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.esame-reale-anno {
+  display: inline-block;
+  background: #f0f3ff;
+  color: #667eea;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+
+.esame-reale-card h2 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.esame-reale-card p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.esame-reale-meta {
+  display: flex;
+  gap: 1.5rem;
+  color: #888;
+  font-size: 0.95rem;
+  margin-bottom: 24px;
+}
+
+.inizia-esame-reale-btn {
+  display: inline-block;
+  padding: 12px 32px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.inizia-esame-reale-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.4);
+}
+
+.esami-reali-info {
+  background: white;
+  border-radius: 15px;
+  padding: 36px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.esami-reali-info h3 {
+  color: #667eea;
+  font-size: 1.3rem;
+  margin-bottom: 16px;
+}
+
+.esami-reali-info ul {
+  list-style: none;
+  color: #555;
+}
+
+.esami-reali-info li {
+  padding: 8px 0 8px 24px;
+  position: relative;
+}
+
+.esami-reali-info li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: bold;
+}
+
+/* DettaglioEsameReale */
+.dettaglio-esame-reale-container {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.esame-reale-quiz-header {
+  background: white;
+  border-radius: 12px;
+  padding: 28px 32px;
+  margin-bottom: 24px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.esame-reale-quiz-header h2 {
+  color: #667eea;
+  font-size: 1.6rem;
+  margin-bottom: 16px;
+}
+
+.esame-reale-completato {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.completato-card {
+  background: white;
+  border-radius: 15px;
+  padding: 50px 40px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  margin-top: 20px;
+}
+
+.completato-emoji { font-size: 4rem; margin-bottom: 1rem; }
+
+.completato-card h2 {
+  color: #667eea;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.completato-score {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.completato-pct {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.completato-pct.positivo { color: #4caf50; }
+.completato-pct.negativo { color: #f44336; }
+
+.completato-esito {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.completato-azioni {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
