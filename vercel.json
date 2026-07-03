@@ -1,0 +1,7 @@
+{
+  "buildCommand": "cd simulatore-fisica && npm install && npm run build",
+  "outputDirectory": "simulatore-fisica/dist",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
