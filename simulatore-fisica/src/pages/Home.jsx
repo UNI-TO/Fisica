@@ -45,6 +45,12 @@ function Home() {
           <h2>Temi d'Esame</h2>
           <p>I 18 argomenti ufficiali per la prova scritta</p>
         </Link>
+
+        <Link to="/formulario" className="menu-card">
+          <div className="icona">📐</div>
+          <h2>Formulario</h2>
+          <p>Tutte le formule del corso con rendering matematico</p>
+        </Link>
       </div>
 
       <div className="info-sezione">

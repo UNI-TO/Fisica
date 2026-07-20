@@ -8,6 +8,7 @@ const links = [
   { to: '/esami-reali', label: 'Esami Reali', icon: '🎯', match: /^\/esami-reali|^\/esame-reale/ },
   { to: '/temi-esame',  label: 'Temi',        icon: '📖', match: /^\/temi-esame/ },
   { to: '/pratica',     label: 'Esercizi',    icon: '✍️', match: /^\/pratica/ },
+  { to: '/formulario',  label: 'Formulario',  icon: '📐', match: /^\/formulario/ },
   { to: '/statistiche', label: 'Statistiche', icon: '📊', match: /^\/statistiche/ },
 ];
 

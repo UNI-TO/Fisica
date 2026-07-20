@@ -9,6 +9,7 @@ import Pratica from './pages/Pratica';
 import EsamiReali from './pages/EsamiReali';
 import DettaglioEsameReale from './pages/DettaglioEsameReale';
 import TemiEsame from './pages/TemiEsame';
+import Formulario from './pages/Formulario';
 import Navbar from './components/Navbar';
 import './App.css';
 
@@ -29,6 +30,7 @@ function App() {
             <Route path="/esami-reali" element={<EsamiReali />} />
             <Route path="/esame-reale/:id" element={<DettaglioEsameReale />} />
             <Route path="/temi-esame" element={<TemiEsame />} />
+            <Route path="/formulario" element={<Formulario />} />
           </Routes>
         </div>
       </div>
